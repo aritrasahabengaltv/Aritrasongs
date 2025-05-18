@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aritrasongs</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="player">
+    <h1>Aritrasongs</h1>
+    <img id="cover" src="cover1.jpg" alt="Album Cover" />
+    <h2 id="title">Song Title</h2>
+    <audio id="audio" src="music/song1.mp3"></audio>
+    <div class="controls">
+      <button onclick="prevSong()">⏮️</button>
+      <button onclick="togglePlay()">▶️ / ⏸️</button>
+      <button onclick="nextSong()">⏭️</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
