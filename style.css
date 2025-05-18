@@ -1,47 +1,45 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #121212;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #f9f9f9;
 }
 
-.player {
-  text-align: center;
-  background: #1db954;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-  width: 90%;
-  max-width: 400px;
+h1 {
+    text-align: center;
+    color: #333;
 }
 
-.player img {
-  width: 100%;
-  max-width: 250px;
-  border-radius: 15px;
-  margin: 20px 0;
+#player-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.controls {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+#audio {
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-.controls button {
-  font-size: 24px;
-  padding: 10px 20px;
-  background: #191414;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
+#playlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.controls button:hover {
-  background: #333;
+#playlist li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+#playlist li:hover {
+    background-color: #efefef;
+}
+
+#playlist li.active {
+    background-color: #d0eaff;
+    font-weight: bold;
 }
